@@ -11,7 +11,7 @@ const UserItem = props => {
       <Card className="user-item__content">
         <Link to={`/${props.id}/products`}>
           <div className="user-item__image">
-            <Avatar image={`http://localhost:3001/${props.image}`} alt={props.name} />
+            <Avatar image={`https://backend-cayg.onrender.com/${props.image}`} alt={props.name} />
           </div>
           <div className="user-item__info">
             <h2>{props.name}</h2>

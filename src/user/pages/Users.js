@@ -12,7 +12,7 @@ const Users = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const responseData = await sendRequest('http://localhost:3001/api/users');
+        const responseData = await sendRequest('https://backend-cayg.onrender.com/api/users');
 
         setLoadedUsers(responseData.users);
       } catch (err) { }

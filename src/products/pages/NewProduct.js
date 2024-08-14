@@ -71,7 +71,7 @@ const NewProduct = () => {
       formData.append('category', category);
       formData.append('image', formState.inputs.image.value);
       await sendRequest(
-        'http://localhost:3001/api/products',
+        'https://backend-cayg.onrender.com/api/products',
         'POST',
         formData,
         {

@@ -16,7 +16,7 @@ const UserProducts = () => {
         const fetchProducts = async () => {
             try {
                 const responseData = await sendRequest(
-                    `http://localhost:3001/api/products/user/${userId}`
+                    `https://backend-cayg.onrender.com/api/products/user/${userId}`
                 );
                 setLoadedProducts(responseData.products);
                 console.log(responseData.products);

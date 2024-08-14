@@ -37,7 +37,7 @@ const ProductItem = props => {
         setShow(false);
         try {
             await sendRequest(
-                `http://localhost:3001/api/products/${props.id}`,
+                `https://backend-cayg.onrender.com/api/products/${props.id}`,
                 'DELETE',
                 null,
                 {
@@ -68,7 +68,7 @@ const ProductItem = props => {
                 <div className="card border-0 shadow">
                     <div className="card-body rounded-bottom">
                         <div className="view ">
-                            <img className="card-img-top rounded-top" src={`http://localhost:3001/${props.image}`} alt={props.title} />
+                            <img className="card-img-top rounded-top" src={`https://backend-cayg.onrender.com/${props.image}`} alt={props.title} />
                             <a href="#!">
                                 <div className="mask rgba-white-slight"></div>
                             </a>

@@ -51,7 +51,7 @@ const UpdateProduct = () => {
     const fetchProducts = async () => {
       try {
         const responseData = await sendRequest(
-          `http://localhost:3001/api/products/${productId}`
+          `https://backend-cayg.onrender.com/api/products/${productId}`
         );
         setLoadedProduct(responseData.product);
         setFormData(
@@ -84,7 +84,7 @@ const UpdateProduct = () => {
     event.preventDefault();
     try {
       await sendRequest(
-        `http://localhost:3001/api/products/${productId}`,
+        `https://backend-cayg.onrender.com/api/products/${productId}`,
         'PATCH',
         JSON.stringify({
           title: formState.inputs.title.value,
