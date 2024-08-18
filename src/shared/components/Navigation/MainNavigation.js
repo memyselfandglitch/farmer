@@ -39,7 +39,7 @@ const MainNavigation = props => {
                 
                 <h1 className="main-navigation__title">
                 <img src={logo} alt="Logo" />
-                    <Link to="/">farmFridge</Link>
+                    <Link to="/">AgriSeva</Link>
                 </h1>
                 <nav className="main-navigation__header-nav">
                     <NavLinks />
